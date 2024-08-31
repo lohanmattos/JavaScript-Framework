@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+    <button id="listarTarefas">Listar Tarefas</button>
+
+<script>
+  let tarefas = [];
+
+  botaoAdicionar.addEventListener('click', function() {
+    let tarefa = inputTarefa.value;
+    if (tarefa) {
+      tarefas.push(tarefa);
+      // (código para adicionar a tarefa à lista visual)
+    }
+  });
+
+  document.getElementById('listarTarefas').addEventListener('click', function() {
+    console.log('Tarefas:', tarefas);
+  });
+</script>
+
+    </body>
+</html>
